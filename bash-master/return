@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /bash/beginner/dada &> /home/john/cs100/labs/lab6/riddle/riddle
+echo rv: $?
+cd $(pwd) &> /dev/null
+echo rv: $?

@@ -1,0 +1,1652 @@
+Initializing cgroup subsys cpuset
+Initializing cgroup subsys cpu
+Linux version 2.6.32-573.el6.x86_64 (mockbuild@c6b9.bsys.dev.centos.org) (gcc version 4.4.7 20120313 (Red Hat 4.4.7-16) (GCC) ) #1 SMP Thu Jul 23 15:44:03 UTC 2015
+Command line: ro root=UUID=321b5f57-26e1-4708-8360-ea33ac8097b0 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
+KERNEL supported cpus:
+  Intel GenuineIntel
+  AMD AuthenticAMD
+  Centaur CentaurHauls
+BIOS-provided physical RAM map:
+ BIOS-e820: 0000000000000000 - 000000000009d800 (usable)
+ BIOS-e820: 000000000009d800 - 00000000000a0000 (reserved)
+ BIOS-e820: 00000000000e0000 - 0000000000100000 (reserved)
+ BIOS-e820: 0000000000100000 - 0000000020000000 (usable)
+ BIOS-e820: 0000000020000000 - 0000000020200000 (reserved)
+ BIOS-e820: 0000000020200000 - 0000000040004000 (usable)
+ BIOS-e820: 0000000040004000 - 0000000040005000 (reserved)
+ BIOS-e820: 0000000040005000 - 00000000d888b000 (usable)
+ BIOS-e820: 00000000d888b000 - 00000000d8dc8000 (reserved)
+ BIOS-e820: 00000000d8dc8000 - 00000000d8dd5000 (ACPI data)
+ BIOS-e820: 00000000d8dd5000 - 00000000d8e31000 (reserved)
+ BIOS-e820: 00000000d8e31000 - 00000000d8e37000 (ACPI data)
+ BIOS-e820: 00000000d8e37000 - 00000000d8eda000 (usable)
+ BIOS-e820: 00000000d8eda000 - 00000000d8feb000 (ACPI NVS)
+ BIOS-e820: 00000000d8feb000 - 00000000d94aa000 (reserved)
+ BIOS-e820: 00000000d94aa000 - 00000000d94ab000 (usable)
+ BIOS-e820: 00000000d94ab000 - 00000000d94ee000 (ACPI NVS)
+ BIOS-e820: 00000000d94ee000 - 00000000d9d55000 (usable)
+ BIOS-e820: 00000000d9d55000 - 00000000d9ff2000 (reserved)
+ BIOS-e820: 00000000d9ff2000 - 00000000da000000 (usable)
+ BIOS-e820: 00000000db000000 - 00000000df200000 (reserved)
+ BIOS-e820: 00000000f8000000 - 00000000fc000000 (reserved)
+ BIOS-e820: 00000000fec00000 - 00000000fec01000 (reserved)
+ BIOS-e820: 00000000fed00000 - 00000000fed04000 (reserved)
+ BIOS-e820: 00000000fed1c000 - 00000000fed20000 (reserved)
+ BIOS-e820: 00000000fee00000 - 00000000fee01000 (reserved)
+ BIOS-e820: 00000000ff000000 - 0000000100000000 (reserved)
+ BIOS-e820: 0000000100000000 - 000000011fe00000 (usable)
+DMI 2.7 present.
+SMBIOS version 2.7 @ 0xF04C0
+DMI: Hewlett-Packard HP Pro 3330 MT /17A0, BIOS 8.07 04/24/2013
+e820 update range: 0000000000000000 - 0000000000001000 (usable) ==> (reserved)
+e820 remove range: 00000000000a0000 - 0000000000100000 (usable)
+No AGP bridge found
+last_pfn = 0x11fe00 max_arch_pfn = 0x400000000
+x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+original variable MTRRs
+reg 0, base: 0GB, range: 4GB, type WB
+reg 1, base: 4GB, range: 512MB, type WB
+reg 2, base: 3584MB, range: 512MB, type UC
+reg 3, base: 3520MB, range: 64MB, type UC
+reg 4, base: 3504MB, range: 16MB, type UC
+reg 5, base: 4606MB, range: 2MB, type UC
+total RAM covered: 4014M
+Found optimal setting for mtrr clean up
+ gran_size: 64K 	chunk_size: 128M 	num_reg: 7  	lose cover RAM: 0G
+New variable MTRRs
+reg 0, base: 0GB, range: 2GB, type WB
+reg 1, base: 2GB, range: 1GB, type WB
+reg 2, base: 3GB, range: 512MB, type WB
+reg 3, base: 3504MB, range: 16MB, type UC
+reg 4, base: 3520MB, range: 64MB, type UC
+reg 5, base: 4GB, range: 512MB, type WB
+reg 6, base: 4606MB, range: 2MB, type UC
+e820 update range: 00000000db000000 - 0000000100000000 (usable) ==> (reserved)
+last_pfn = 0xda000 max_arch_pfn = 0x400000000
+initial memory mapped : 0 - 20000000
+init_memory_mapping: 0000000000000000-00000000da000000
+ 0000000000 - 00da000000 page 2M
+kernel direct mapping tables up to da000000 @ 8000-d000
+Use unified mapping for non-reserved e820 regions.
+init_memory_mapping: 0000000100000000-000000011fe00000
+ 0100000000 - 011fe00000 page 2M
+kernel direct mapping tables up to 11fe00000 @ b000-d000
+RAMDISK: 1e54c000 - 1ffef99b
+ACPI: Deleted _OSI()
+ACPI: Deleted _OSI()
+ACPI: RSDP 00000000000f0490 00024 (v02 HPQOEM)
+ACPI: XSDT 00000000d8dc8078 00074 (v01 HPQOEM SLIC-CPC 01072009 AMI  00010013)
+ACPI: FACP 00000000d8dd2368 000F4 (v04 HPQOEM SLIC-CPC 01072009 AMI  00010013)
+ACPI: DSDT 00000000d8dc8180 0A1E4 (v02 HPQOEM SLIC-CPC 00000807 INTL 20051117)
+ACPI: FACS 00000000d8fe9f80 00040
+ACPI: APIC 00000000d8dd2460 00072 (v03 HPQOEM SLIC-CPC 01072009 AMI  00010013)
+ACPI: FPDT 00000000d8dd24d8 00044 (v01 HPQOEM SLIC-CPC 01072009 AMI  00010013)
+ACPI: MCFG 00000000d8dd2520 0003C (v01 HPQOEM SLIC-CPC 01072009 MSFT 00000097)
+ACPI: HPET 00000000d8dd2560 00038 (v01 HPQOEM SLIC-CPC 01072009 AMI. 00000005)
+ACPI: SSDT 00000000d8dd2598 0036D (v01 HPQOEM SLIC-CPC 00001000 INTL 20091112)
+ACPI: SSDT 00000000d8dd2908 009AA (v01 HPQOEM SLIC-CPC 00003000 INTL 20051117)
+ACPI: SSDT 00000000d8dd32b8 00A92 (v01 HPQOEM SLIC-CPC 00003000 INTL 20051117)
+ACPI: DBGP 00000000d8dd3d50 00034 (v01 HPQOEM SLIC-CPC 01072009 AMI  00010013)
+ACPI: SSDT 00000000d8dd3d88 0084A (v01 HPQOEM SLIC-CPC 00000001 MSFT 03000001)
+ACPI: Local APIC address 0xfee00000
+Setting APIC routing to flat.
+No NUMA configuration found
+Faking a node at 0000000000000000-000000011fe00000
+Bootmem setup node 0 0000000000000000-000000011fe00000
+  NODE_DATA [000000000000c000 - 000000000003ffff]
+  bootmap [0000000000040000 -  0000000000063fbf] pages 24
+(8 early reservations) ==> bootmem [0000000000 - 011fe00000]
+  #0 [0000000000 - 0000001000]   BIOS data page ==> [0000000000 - 0000001000]
+  #1 [0000006000 - 0000008000]       TRAMPOLINE ==> [0000006000 - 0000008000]
+  #2 [0001000000 - 000203cb24]    TEXT DATA BSS ==> [0001000000 - 000203cb24]
+  #3 [001e54c000 - 001ffef99b]          RAMDISK ==> [001e54c000 - 001ffef99b]
+  #4 [000009d800 - 0000100000]    BIOS reserved ==> [000009d800 - 0000100000]
+  #5 [000203d000 - 000203d7db]              BRK ==> [000203d000 - 000203d7db]
+  #6 [0000008000 - 000000b000]          PGTABLE ==> [0000008000 - 000000b000]
+  #7 [000000b000 - 000000c000]          PGTABLE ==> [000000b000 - 000000c000]
+found SMP MP-table at [ffff8800000fd7c0] fd7c0
+ [ffffea0000000000-ffffea0003ffffff] PMD -> [ffff88002c600000-ffff88002fffffff] on node 0
+Zone PFN ranges:
+  DMA      0x00000001 -> 0x00001000
+  DMA32    0x00001000 -> 0x00100000
+  Normal   0x00100000 -> 0x0011fe00
+Movable zone start PFN for each node
+early_node_map[9] active PFN ranges
+    0: 0x00000001 -> 0x0000009d
+    0: 0x00000100 -> 0x00020000
+    0: 0x00020200 -> 0x00040004
+    0: 0x00040005 -> 0x000d888b
+    0: 0x000d8e37 -> 0x000d8eda
+    0: 0x000d94aa -> 0x000d94ab
+    0: 0x000d94ee -> 0x000d9d55
+    0: 0x000d9ff2 -> 0x000da000
+    0: 0x00100000 -> 0x0011fe00
+On node 0 totalpages: 1019199
+  DMA zone: 56 pages used for memmap
+  DMA zone: 105 pages reserved
+  DMA zone: 3835 pages, LIFO batch:0
+  DMA32 zone: 14280 pages used for memmap
+  DMA32 zone: 870363 pages, LIFO batch:31
+  Normal zone: 1785 pages used for memmap
+  Normal zone: 128775 pages, LIFO batch:31
+Reserving Intel graphics stolen memory at 0xdb200000-0xdf1fffff
+ACPI: PM-Timer IO Port: 0x408
+ACPI: Local APIC address 0xfee00000
+Setting APIC routing to flat.
+ACPI: LAPIC (acpi_id[0x01] lapic_id[0x00] enabled)
+ACPI: LAPIC (acpi_id[0x02] lapic_id[0x02] enabled)
+ACPI: LAPIC (acpi_id[0x03] lapic_id[0x01] enabled)
+ACPI: LAPIC (acpi_id[0x04] lapic_id[0x03] enabled)
+ACPI: LAPIC_NMI (acpi_id[0xff] high edge lint[0x1])
+ACPI: IOAPIC (id[0x02] address[0xfec00000] gsi_base[0])
+IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-23
+ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+ACPI: IRQ0 used by override.
+ACPI: IRQ2 used by override.
+ACPI: IRQ9 used by override.
+Using ACPI (MADT) for SMP configuration information
+ACPI: HPET id: 0x8086a701 base: 0xfed00000
+SMP: Allowing 4 CPUs, 0 hotplug CPUs
+nr_irqs_gsi: 24
+PM: Registered nosave memory: 000000000009d000 - 000000000009e000
+PM: Registered nosave memory: 000000000009e000 - 00000000000a0000
+PM: Registered nosave memory: 00000000000a0000 - 00000000000e0000
+PM: Registered nosave memory: 00000000000e0000 - 0000000000100000
+PM: Registered nosave memory: 0000000020000000 - 0000000020200000
+PM: Registered nosave memory: 0000000040004000 - 0000000040005000
+PM: Registered nosave memory: 00000000d888b000 - 00000000d8dc8000
+PM: Registered nosave memory: 00000000d8dc8000 - 00000000d8dd5000
+PM: Registered nosave memory: 00000000d8dd5000 - 00000000d8e31000
+PM: Registered nosave memory: 00000000d8e31000 - 00000000d8e37000
+PM: Registered nosave memory: 00000000d8eda000 - 00000000d8feb000
+PM: Registered nosave memory: 00000000d8feb000 - 00000000d94aa000
+PM: Registered nosave memory: 00000000d94ab000 - 00000000d94ee000
+PM: Registered nosave memory: 00000000d9d55000 - 00000000d9ff2000
+PM: Registered nosave memory: 00000000da000000 - 00000000db000000
+PM: Registered nosave memory: 00000000db000000 - 00000000df200000
+PM: Registered nosave memory: 00000000df200000 - 00000000f8000000
+PM: Registered nosave memory: 00000000f8000000 - 00000000fc000000
+PM: Registered nosave memory: 00000000fc000000 - 00000000fec00000
+PM: Registered nosave memory: 00000000fec00000 - 00000000fec01000
+PM: Registered nosave memory: 00000000fec01000 - 00000000fed00000
+PM: Registered nosave memory: 00000000fed00000 - 00000000fed04000
+PM: Registered nosave memory: 00000000fed04000 - 00000000fed1c000
+PM: Registered nosave memory: 00000000fed1c000 - 00000000fed20000
+PM: Registered nosave memory: 00000000fed20000 - 00000000fee00000
+PM: Registered nosave memory: 00000000fee00000 - 00000000fee01000
+PM: Registered nosave memory: 00000000fee01000 - 00000000ff000000
+PM: Registered nosave memory: 00000000ff000000 - 0000000100000000
+Allocating PCI resources starting at df200000 (gap: df200000:18e00000)
+Booting paravirtualized kernel on bare hardware
+NR_CPUS:4096 nr_cpumask_bits:4 nr_cpu_ids:4 nr_node_ids:1
+PERCPU: Embedded 30 pages/cpu @ffff88002c200000 s91224 r8192 d23464 u524288
+pcpu-alloc: s91224 r8192 d23464 u524288 alloc=1*2097152
+pcpu-alloc: [0] 0 1 2 3 
+Built 1 zonelists in Node order, mobility grouping on.  Total pages: 1002973
+Policy zone: Normal
+Kernel command line: ro root=UUID=321b5f57-26e1-4708-8360-ea33ac8097b0 rd_NO_LUKS rd_NO_LVM LANG=en_US.UTF-8 rd_NO_MD SYSFONT=latarcyrheb-sun16  KEYBOARDTYPE=pc KEYTABLE=us rd_NO_DM rhgb quiet
+PID hash table entries: 4096 (order: 3, 32768 bytes)
+xsave/xrstor: enabled xstate_bv 0x7, cntxt size 0x340
+Checking aperture...
+No AGP bridge found
+Memory: 3906448k/4716544k available (5394k kernel code, 639748k absent, 170348k reserved, 7014k data, 1296k init)
+Hierarchical RCU implementation.
+NR_IRQS:33024 nr_irqs:440
+Extended CMOS year: 2000
+Console: colour VGA+ 80x25
+console [tty0] enabled
+allocated 16777216 bytes of page_cgroup
+please try 'cgroup_disable=memory' option if you don't want memory cgroups
+hpet clockevent registered
+Fast TSC calibration using PIT
+Detected 3292.473 MHz processor.
+Calibrating delay loop (skipped), value calculated using timer frequency.. 6584.94 BogoMIPS (lpj=3292473)
+pid_max: default: 32768 minimum: 301
+Security Framework initialized
+SELinux:  Initializing.
+SELinux:  Starting in permissive mode
+Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes)
+Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes)
+Mount-cache hash table entries: 256
+Initializing cgroup subsys ns
+Initializing cgroup subsys cpuacct
+Initializing cgroup subsys memory
+Initializing cgroup subsys devices
+Initializing cgroup subsys freezer
+Initializing cgroup subsys net_cls
+Initializing cgroup subsys blkio
+Initializing cgroup subsys perf_event
+Initializing cgroup subsys net_prio
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 0
+mce: CPU supports 7 MCE banks
+CPU0: Thermal monitoring enabled (TM1)
+using mwait in idle threads.
+ACPI: Core revision 20090903
+ftrace: converting mcount calls to 0f 1f 44 00 00
+ftrace: allocating 22127 entries in 87 pages
+APIC routing finalized to flat.
+..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+CPU0: Intel(R) Core(TM) i3-3220 CPU @ 3.30GHz stepping 09
+Performance Events: PEBS fmt1+, 16-deep LBR, IvyBridge events, full-width counters, Intel PMU driver.
+... version:                3
+... bit width:              48
+... generic registers:      4
+... value mask:             0000ffffffffffff
+... max period:             0000ffffffffffff
+... fixed-purpose events:   3
+... event mask:             000000070000000f
+NMI watchdog enabled, takes one hw-pmu counter.
+Booting Node   0, Processors  #1 #2 #3 Ok.
+Brought up 4 CPUs
+Total of 4 processors activated (26339.78 BogoMIPS).
+sizeof(vma)=200 bytes
+sizeof(page)=56 bytes
+sizeof(inode)=592 bytes
+sizeof(dentry)=192 bytes
+sizeof(ext3inode)=800 bytes
+sizeof(buffer_head)=104 bytes
+sizeof(skbuff)=232 bytes
+sizeof(task_struct)=2672 bytes
+devtmpfs: initialized
+PM: Registering ACPI NVS region at d8eda000 (1118208 bytes)
+PM: Registering ACPI NVS region at d94ab000 (274432 bytes)
+regulator: core version 0.5
+NET: Registered protocol family 16
+ACPI: bus type pci registered
+PCI: MCFG configuration 0: base f8000000 segment 0 buses 0 - 63
+PCI: MCFG area at f8000000 reserved in E820
+PCI: Using MMCONFIG at f8000000 - fbffffff
+PCI: Using configuration type 1 for base access
+bio: create slab <bio-0> at 0
+ACPI: EC: Look up EC in DSDT
+ACPI: Executed 1 blocks of module-level executable AML code
+ACPI: Interpreter enabled
+ACPI: (supports S0 S3 S4 S5)
+ACPI: Using IOAPIC for interrupt routing
+ACPI: Power Resource [FN00] (off)
+ACPI: Power Resource [FN01] (off)
+ACPI: Power Resource [FN02] (off)
+ACPI: Power Resource [FN03] (off)
+ACPI: Power Resource [FN04] (off)
+ACPI: No dock devices found.
+PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-3e])
+pci_root PNP0A08:00: host bridge window [io  0x0000-0x0cf7]
+pci_root PNP0A08:00: host bridge window [io  0x0d00-0xffff]
+pci_root PNP0A08:00: host bridge window [mem 0x000a0000-0x000bffff]
+pci_root PNP0A08:00: host bridge window [mem 0x000d0000-0x000d3fff]
+pci_root PNP0A08:00: host bridge window [mem 0x000d4000-0x000d7fff]
+pci_root PNP0A08:00: host bridge window [mem 0x000d8000-0x000dbfff]
+pci_root PNP0A08:00: host bridge window [mem 0x000dc000-0x000dffff]
+pci_root PNP0A08:00: host bridge window [mem 0x000e0000-0x000e3fff]
+pci_root PNP0A08:00: host bridge window [mem 0x000e4000-0x000e7fff]
+pci_root PNP0A08:00: host bridge window [mem 0xdf200000-0xfeafffff]
+PCI host bridge to bus 0000:00
+pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7]
+pci_bus 0000:00: root bus resource [io  0x0d00-0xffff]
+pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff]
+pci_bus 0000:00: root bus resource [mem 0x000d0000-0x000d3fff]
+pci_bus 0000:00: root bus resource [mem 0x000d4000-0x000d7fff]
+pci_bus 0000:00: root bus resource [mem 0x000d8000-0x000dbfff]
+pci_bus 0000:00: root bus resource [mem 0x000dc000-0x000dffff]
+pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000e3fff]
+pci_bus 0000:00: root bus resource [mem 0x000e4000-0x000e7fff]
+pci_bus 0000:00: root bus resource [mem 0xdf200000-0xfeafffff]
+pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:01.0: PME# disabled
+pci 0000:00:02.0: reg 10: [mem 0xf7800000-0xf7bfffff 64bit]
+pci 0000:00:02.0: reg 18: [mem 0xe0000000-0xefffffff 64bit pref]
+pci 0000:00:02.0: reg 20: [io  0xf000-0xf03f]
+pci 0000:00:16.0: reg 10: [mem 0xf7d0a000-0xf7d0a00f 64bit]
+pci 0000:00:16.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:16.0: PME# disabled
+pci 0000:00:1a.0: reg 10: [mem 0xf7d08000-0xf7d083ff]
+pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1a.0: PME# disabled
+pci 0000:00:1b.0: reg 10: [mem 0xf7d00000-0xf7d03fff 64bit]
+pci 0000:00:1b.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1b.0: PME# disabled
+pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.0: PME# disabled
+pci 0000:00:1c.3: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.3: PME# disabled
+pci 0000:00:1c.5: PME# supported from D0 D3hot D3cold
+pci 0000:00:1c.5: PME# disabled
+pci 0000:00:1d.0: reg 10: [mem 0xf7d07000-0xf7d073ff]
+pci 0000:00:1d.0: PME# supported from D0 D3hot D3cold
+pci 0000:00:1d.0: PME# disabled
+pci 0000:00:1f.2: reg 10: [io  0xf0b0-0xf0b7]
+pci 0000:00:1f.2: reg 14: [io  0xf0a0-0xf0a3]
+pci 0000:00:1f.2: reg 18: [io  0xf090-0xf097]
+pci 0000:00:1f.2: reg 1c: [io  0xf080-0xf083]
+pci 0000:00:1f.2: reg 20: [io  0xf060-0xf07f]
+pci 0000:00:1f.2: reg 24: [mem 0xf7d06000-0xf7d067ff]
+pci 0000:00:1f.2: PME# supported from D3hot
+pci 0000:00:1f.2: PME# disabled
+pci 0000:00:1f.3: reg 10: [mem 0xf7d05000-0xf7d050ff 64bit]
+pci 0000:00:1f.3: reg 20: [io  0xf040-0xf05f]
+pci 0000:00:01.0: PCI bridge to [bus 01-01]
+pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+pci 0000:03:00.0: supports D1 D2
+pci 0000:03:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+pci 0000:03:00.0: PME# disabled
+pci 0000:00:1c.3: PCI bridge to [bus 03-04]
+pci 0000:03:00.0: PCI bridge to [bus 04-04] (subtractive decode)
+pci 0000:03:00.0:   bridge window [??? 0x00000000 flags 0x0] (subtractive decode)
+pci 0000:03:00.0:   bridge window [??? 0x00000000 flags 0x0] (subtractive decode)
+pci 0000:03:00.0:   bridge window [??? 0x00000000 flags 0x0] (subtractive decode)
+pci 0000:03:00.0:   bridge window [??? 0x00000000 flags 0x0] (subtractive decode)
+pci 0000:05:00.0: reg 10: [io  0xe000-0xe0ff]
+pci 0000:05:00.0: reg 18: [mem 0xf7c00000-0xf7c00fff 64bit]
+pci 0000:05:00.0: reg 20: [mem 0xf0000000-0xf0003fff 64bit pref]
+pci 0000:05:00.0: supports D1 D2
+pci 0000:05:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+pci 0000:05:00.0: PME# disabled
+pci 0000:00:1c.5: PCI bridge to [bus 05-05]
+pci 0000:00:1c.5:   bridge window [io  0xe000-0xefff]
+pci 0000:00:1c.5:   bridge window [mem 0xf7c00000-0xf7cfffff]
+pci 0000:00:1c.5:   bridge window [mem 0xf0000000-0xf00fffff 64bit pref]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP01._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP04._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.RP06._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.PEG0._PRT]
+ pci0000:00: Requesting ACPI _OSC control (0x1d)
+ pci0000:00: ACPI _OSC control (0x18) granted
+ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKB] (IRQs *3 4 5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 *10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 *10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0, disabled.
+ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 *5 6 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+vgaarb: loaded
+vgaarb: bridge control possible 0000:00:02.0
+SCSI subsystem initialized
+libata version 3.00 loaded.
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI: Using ACPI for IRQ routing
+PCI: old code would have set cacheline size to 32 bytes, but clflush_size = 64
+PCI: pci_cache_line_size set to 64 bytes
+NetLabel: Initializing
+NetLabel:  domain hash size = 128
+NetLabel:  protocols = UNLABELED CIPSOv4
+NetLabel:  unlabeled traffic allowed by default
+  alloc irq_desc for 24 on node -1
+  alloc kstat_irqs on node -1
+  alloc irq_desc for 25 on node -1
+  alloc kstat_irqs on node -1
+  alloc irq_desc for 26 on node -1
+  alloc kstat_irqs on node -1
+  alloc irq_desc for 27 on node -1
+  alloc kstat_irqs on node -1
+HPET: 8 timers in total, 4 timers will be used for per-cpu timer
+hpet0: at MMIO 0xfed00000, IRQs 2, 8, 24, 25, 26, 27, 0, 0
+hpet0: 8 comparators, 64-bit 14.318180 MHz counter
+hpet: hpet2 irq 24 for MSI
+hpet: hpet3 irq 25 for MSI
+hpet: hpet4 irq 26 for MSI
+hpet: hpet5 irq 27 for MSI
+Switching to clocksource hpet
+pnp: PnP ACPI init
+ACPI: bus type pnp registered
+pnp 00:00: [io  0x0cf8-0x0cff]
+pnp 00:00: Plug and Play ACPI device, IDs PNP0a08 PNP0a03 (active)
+pnp 00:01: [mem 0xfed40000-0xfed44fff]
+pnp 00:01: Plug and Play ACPI device, IDs PNP0c01 (active)
+pnp 00:02: [io  0x0000-0x001f]
+pnp 00:02: [io  0x0081-0x0091]
+pnp 00:02: [io  0x0093-0x009f]
+pnp 00:02: [io  0x00c0-0x00df]
+pnp 00:02: [dma 4]
+pnp 00:02: Plug and Play ACPI device, IDs PNP0200 (active)
+pnp 00:03: [mem 0xff000000-0xffffffff]
+pnp 00:03: Plug and Play ACPI device, IDs INT0800 (active)
+pnp 00:04: [mem 0xfed00000-0xfed003ff]
+pnp 00:04: Plug and Play ACPI device, IDs PNP0103 (active)
+pnp 00:05: [io  0x002e-0x002f]
+pnp 00:05: [io  0x004e-0x004f]
+pnp 00:05: [io  0x0061]
+pnp 00:05: [io  0x0063]
+pnp 00:05: [io  0x0065]
+pnp 00:05: [io  0x0067]
+pnp 00:05: [io  0x0070]
+pnp 00:05: [io  0x0080]
+pnp 00:05: [io  0x0092]
+pnp 00:05: [io  0x00b2-0x00b3]
+pnp 00:05: [io  0x0680-0x069f]
+pnp 00:05: [io  0x1000-0x100f]
+pnp 00:05: [io  0xffff]
+pnp 00:05: [io  0xffff]
+pnp 00:05: [io  0x0400-0x0453]
+pnp 00:05: [io  0x0458-0x047f]
+pnp 00:05: [io  0x0500-0x057f]
+pnp 00:05: [io  0x164e-0x164f]
+pnp 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+pnp 00:06: [io  0x0070-0x0077]
+pnp 00:06: [irq 8]
+pnp 00:06: Plug and Play ACPI device, IDs PNP0b00 (active)
+pnp 00:07: [io  0x0454-0x0457]
+pnp 00:07: Plug and Play ACPI device, IDs INT3f0d PNP0c02 (active)
+pnp 00:08: [io  0x0000-0xffffffffffffffff disabled]
+pnp 00:08: [io  0x0a00-0x0a1f]
+pnp 00:08: [io  0x0a30-0x0a3f]
+pnp 00:08: [io  0x0a20-0x0a2f]
+pnp 00:08: Plug and Play ACPI device, IDs PNP0c02 (active)
+pnp 00:09: [io  0x03f8-0x03ff]
+pnp 00:09: [irq 4]
+pnp 00:09: [dma 0 disabled]
+pnp 00:09: Plug and Play ACPI device, IDs PNP0501 (active)
+pnp 00:0a: [io  0x0010-0x001f]
+pnp 00:0a: [io  0x0022-0x003f]
+pnp 00:0a: [io  0x0044-0x005f]
+pnp 00:0a: [io  0x0062-0x0063]
+pnp 00:0a: [io  0x0065-0x006f]
+pnp 00:0a: [io  0x0072-0x007f]
+pnp 00:0a: [io  0x0080]
+pnp 00:0a: [io  0x0084-0x0086]
+pnp 00:0a: [io  0x0088]
+pnp 00:0a: [io  0x008c-0x008e]
+pnp 00:0a: [io  0x0090-0x009f]
+pnp 00:0a: [io  0x00a2-0x00bf]
+pnp 00:0a: [io  0x00e0-0x00ef]
+pnp 00:0a: [io  0x04d0-0x04d1]
+pnp 00:0a: Plug and Play ACPI device, IDs PNP0c02 (active)
+pnp 00:0b: [io  0x00f0-0x00ff]
+pnp 00:0b: [irq 13]
+pnp 00:0b: Plug and Play ACPI device, IDs PNP0c04 (active)
+pnp 00:0c: [mem 0xfed1c000-0xfed1ffff]
+pnp 00:0c: [mem 0xfed10000-0xfed17fff]
+pnp 00:0c: [mem 0xfed18000-0xfed18fff]
+pnp 00:0c: [mem 0xfed19000-0xfed19fff]
+pnp 00:0c: [mem 0xf8000000-0xfbffffff]
+pnp 00:0c: [mem 0xfed20000-0xfed3ffff]
+pnp 00:0c: [mem 0xfed90000-0xfed93fff]
+pnp 00:0c: [mem 0xfed45000-0xfed8ffff]
+pnp 00:0c: [mem 0xff000000-0xffffffff]
+pnp 00:0c: [mem 0xfee00000-0xfeefffff]
+pnp 00:0c: [mem 0xdf200000-0xdf200fff]
+pnp 00:0c: Plug and Play ACPI device, IDs PNP0c02 (active)
+pnp 00:0d: [mem 0x20000000-0x201fffff]
+pnp 00:0d: [mem 0x40004000-0x40004fff]
+pnp 00:0d: Plug and Play ACPI device, IDs PNP0c01 (active)
+pnp: PnP ACPI: found 14 devices
+ACPI: ACPI bus type pnp unregistered
+system 00:01: [mem 0xfed40000-0xfed44fff] has been reserved
+system 00:05: [io  0x0680-0x069f] has been reserved
+system 00:05: [io  0x1000-0x100f] has been reserved
+system 00:05: [io  0xffff] has been reserved
+system 00:05: [io  0xffff] has been reserved
+system 00:05: [io  0x0400-0x0453] has been reserved
+system 00:05: [io  0x0458-0x047f] has been reserved
+system 00:05: [io  0x0500-0x057f] has been reserved
+system 00:05: [io  0x164e-0x164f] has been reserved
+system 00:07: [io  0x0454-0x0457] has been reserved
+system 00:08: [io  0x0a00-0x0a1f] has been reserved
+system 00:08: [io  0x0a30-0x0a3f] has been reserved
+system 00:08: [io  0x0a20-0x0a2f] has been reserved
+system 00:0a: [io  0x04d0-0x04d1] has been reserved
+system 00:0c: [mem 0xfed1c000-0xfed1ffff] has been reserved
+system 00:0c: [mem 0xfed10000-0xfed17fff] has been reserved
+system 00:0c: [mem 0xfed18000-0xfed18fff] has been reserved
+system 00:0c: [mem 0xfed19000-0xfed19fff] has been reserved
+system 00:0c: [mem 0xf8000000-0xfbffffff] has been reserved
+system 00:0c: [mem 0xfed20000-0xfed3ffff] has been reserved
+system 00:0c: [mem 0xfed90000-0xfed93fff] has been reserved
+system 00:0c: [mem 0xfed45000-0xfed8ffff] has been reserved
+system 00:0c: [mem 0xff000000-0xffffffff] has been reserved
+system 00:0c: [mem 0xfee00000-0xfeefffff] could not be reserved
+system 00:0c: [mem 0xdf200000-0xdf200fff] has been reserved
+system 00:0d: [mem 0x20000000-0x201fffff] has been reserved
+system 00:0d: [mem 0x40004000-0x40004fff] has been reserved
+pci 0000:00:01.0: PCI bridge to [bus 01-01]
+pci 0000:00:1c.0: PCI bridge to [bus 02-02]
+pci 0000:03:00.0: PCI bridge to [bus 04-04]
+pci 0000:00:1c.3: PCI bridge to [bus 03-04]
+pci 0000:00:1c.5: PCI bridge to [bus 05-05]
+pci 0000:00:1c.5:   bridge window [io  0xe000-0xefff]
+pci 0000:00:1c.5:   bridge window [mem 0xf7c00000-0xf7cfffff]
+pci 0000:00:1c.5:   bridge window [mem 0xf0000000-0xf00fffff 64bit pref]
+  alloc irq_desc for 16 on node -1
+  alloc kstat_irqs on node -1
+pci 0000:00:01.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+pci 0000:00:01.0: setting latency timer to 64
+pci 0000:00:1c.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+pci 0000:00:1c.0: setting latency timer to 64
+  alloc irq_desc for 19 on node -1
+  alloc kstat_irqs on node -1
+pci 0000:00:1c.3: PCI INT D -> GSI 19 (level, low) -> IRQ 19
+pci 0000:00:1c.3: setting latency timer to 64
+pci 0000:03:00.0: PCI INT A -> GSI 19 (level, low) -> IRQ 19
+pci 0000:03:00.0: setting latency timer to 64
+  alloc irq_desc for 17 on node -1
+  alloc kstat_irqs on node -1
+pci 0000:00:1c.5: PCI INT B -> GSI 17 (level, low) -> IRQ 17
+pci 0000:00:1c.5: setting latency timer to 64
+pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7]
+pci_bus 0000:00: resource 5 [io  0x0d00-0xffff]
+pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff]
+pci_bus 0000:00: resource 7 [mem 0x000d0000-0x000d3fff]
+pci_bus 0000:00: resource 8 [mem 0x000d4000-0x000d7fff]
+pci_bus 0000:00: resource 9 [mem 0x000d8000-0x000dbfff]
+pci_bus 0000:00: resource 10 [mem 0x000dc000-0x000dffff]
+pci_bus 0000:00: resource 11 [mem 0x000e0000-0x000e3fff]
+pci_bus 0000:00: resource 12 [mem 0x000e4000-0x000e7fff]
+pci_bus 0000:00: resource 13 [mem 0xdf200000-0xfeafffff]
+pci_bus 0000:05: resource 0 [io  0xe000-0xefff]
+pci_bus 0000:05: resource 1 [mem 0xf7c00000-0xf7cfffff]
+pci_bus 0000:05: resource 2 [mem 0xf0000000-0xf00fffff 64bit pref]
+NET: Registered protocol family 2
+IP route cache hash table entries: 131072 (order: 8, 1048576 bytes)
+TCP established hash table entries: 524288 (order: 11, 8388608 bytes)
+TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+TCP: Hash tables configured (established 524288 bind 65536)
+TCP reno registered
+NET: Registered protocol family 1
+pci 0000:00:02.0: Boot video device
+pci 0000:00:1a.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+pci 0000:00:1a.0: PCI INT A disabled
+  alloc irq_desc for 23 on node -1
+  alloc kstat_irqs on node -1
+pci 0000:00:1d.0: PCI INT A -> GSI 23 (level, low) -> IRQ 23
+pci 0000:00:1d.0: PCI INT A disabled
+Trying to unpack rootfs image as initramfs...
+Freeing initrd memory: 27278k freed
+PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Placing 64MB software IO TLB between ffff880024000000 - ffff880028000000
+software IO TLB at phys 0x24000000 - 0x28000000
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+audit: initializing netlink socket (disabled)
+type=2000 audit(1462162488.454:1): initialized
+HugeTLB registered 2 MB page size, pre-allocated 0 pages
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+msgmni has been set to 7683
+SELinux:  Registering netfilter hooks
+ksign: Installing public key data
+Loading keyring
+- Added public key 70243B77E3333653
+- User ID: CentOS (Kernel Module GPG key)
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+io scheduler noop registered
+io scheduler anticipatory registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+pcieport 0000:00:01.0: setting latency timer to 64
+  alloc irq_desc for 28 on node -1
+  alloc kstat_irqs on node -1
+pcieport 0000:00:01.0: irq 28 for MSI/MSI-X
+pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0
+ACPI: Power Button [PWRB]
+input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input1
+ACPI: Power Button [PWRF]
+ACPI: acpi_idle yielding to intel_idleACPI: SSDT 00000000d8dde018 0083B (v01  PmRef  Cpu0Cst 00003001 INTL 20051117)
+ACPI: SSDT 00000000d8ddfa98 00303 (v01  PmRef    ApIst 00003000 INTL 20051117)
+ACPI: SSDT 00000000d8de0c18 00119 (v01  PmRef    ApCst 00003000 INTL 20051117)
+ACPI: \_PR_.CPU4: failed to get CPU APIC ID.
+ACPI: \_PR_.CPU5: failed to get CPU APIC ID.
+ACPI: \_PR_.CPU6: failed to get CPU APIC ID.
+ACPI: \_PR_.CPU7: failed to get CPU APIC ID.
+[Firmware Bug]: No valid trip found
+thermal LNXTHERM:01: registered as thermal_zone0
+ACPI: Thermal Zone [TZ00] (28 C)
+thermal LNXTHERM:02: registered as thermal_zone1
+ACPI: Thermal Zone [TZ01] (30 C)
+GHES: HEST is not enabled!
+Non-volatile memory driver v1.3
+Linux agpgart interface v0.103
+crash memory driver: version 1.1
+Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+serial8250: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+00:09: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+brd: module loaded
+loop: module loaded
+input: Macintosh mouse button emulation as /devices/virtual/input/input2
+Fixed MDIO Bus: probed
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+ehci_hcd 0000:00:1a.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+ehci_hcd 0000:00:1a.0: setting latency timer to 64
+ehci_hcd 0000:00:1a.0: EHCI Host Controller
+ehci_hcd 0000:00:1a.0: new USB bus registered, assigned bus number 1
+ehci_hcd 0000:00:1a.0: debug port 2
+ehci_hcd 0000:00:1a.0: cache line size of 64 is not supported
+ehci_hcd 0000:00:1a.0: irq 16, io mem 0xf7d08000
+ehci_hcd 0000:00:1a.0: USB 2.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: EHCI Host Controller
+usb usb1: Manufacturer: Linux 2.6.32-573.el6.x86_64 ehci_hcd
+usb usb1: SerialNumber: 0000:00:1a.0
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ehci_hcd 0000:00:1d.0: PCI INT A -> GSI 23 (level, low) -> IRQ 23
+ehci_hcd 0000:00:1d.0: setting latency timer to 64
+ehci_hcd 0000:00:1d.0: EHCI Host Controller
+ehci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+ehci_hcd 0000:00:1d.0: debug port 2
+ehci_hcd 0000:00:1d.0: cache line size of 64 is not supported
+ehci_hcd 0000:00:1d.0: irq 23, io mem 0xf7d07000
+ehci_hcd 0000:00:1d.0: USB 2.0 started, EHCI 1.00
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: EHCI Host Controller
+usb usb2: Manufacturer: Linux 2.6.32-573.el6.x86_64 ehci_hcd
+usb usb2: SerialNumber: 0000:00:1d.0
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+uhci_hcd: USB Universal Host Controller Interface driver
+PNP: No PS/2 controller found. Probing ports directly.
+serio: i8042 KBD port at 0x60,0x64 irq 1
+serio: i8042 AUX port at 0x60,0x64 irq 12
+mice: PS/2 mouse device common for all mice
+rtc_cmos 00:06: RTC can wake from S4
+rtc_cmos 00:06: rtc core: registered rtc_cmos as rtc0
+rtc0: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+cpuidle: using governor ladder
+cpuidle: using governor menu
+EFI Variables Facility v0.08 2004-May-17
+usbcore: registered new interface driver hiddev
+usbcore: registered new interface driver usbhid
+usbhid: v2.6:USB HID core driver
+GRE over IPv4 demultiplexor driver
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+registered taskstats version 1
+rtc_cmos 00:06: setting system clock to 2016-05-02 04:14:49 UTC (1462162489)
+Initalizing network drop monitor service
+Freeing unused kernel memory: 1296k freed
+Write protecting the kernel read-only data: 10240k
+Freeing unused kernel memory: 732k freed
+Freeing unused kernel memory: 1576k freed
+dracut: dracut-004-388.el6
+dracut: rd_NO_LUKS: removing cryptoluks activation
+dracut: rd_NO_LVM: removing LVM activation
+device-mapper: uevent: version 1.0.3
+device-mapper: ioctl: 4.29.0-ioctl (2014-10-28) initialised: dm-devel@redhat.com
+udev: starting version 147
+[drm] Initialized drm 1.1.0 20060810
+i915 0000:00:02.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+[drm] Memory usable by graphics device = 2048M
+i915 0000:00:02.0: setting latency timer to 64
+  alloc irq_desc for 29 on node -1
+  alloc kstat_irqs on node -1
+i915 0000:00:02.0: irq 29 for MSI/MSI-X
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+vgaarb: device changed decodes: PCI:0000:00:02.0,olddecodes=io+mem,decodes=io+mem:owns=io+mem
+ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+acpi device:4a: registered as cooling_device9
+input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input3
+[drm] Initialized i915 1.6.0 20140905 for 0000:00:02.0 on minor 0
+fbcon: inteldrmfb (fb0) is primary device
+[drm:cpt_set_fifo_underrun_reporting] *ERROR* uncleared pch fifo underrun on pch transcoder A
+[drm:cpt_serr_int_handler] *ERROR* PCH transcoder A FIFO underrun
+Console: switching to colour frame buffer device 160x64
+i915 0000:00:02.0: fb0: inteldrmfb frame buffer device
+i915 0000:00:02.0: registered panic notifier
+usb 1-1: new high speed USB device number 2 using ehci_hcd
+dracut: Starting plymouth daemon
+dracut: rd_NO_DM: removing DM RAID activation
+dracut: rd_NO_MD: removing MD RAID activation
+usb 1-1: New USB device found, idVendor=8087, idProduct=0024
+usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+usb 1-1: configuration #1 chosen from 1 choice
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 4 ports detected
+ahci 0000:00:1f.2: version 3.0
+ahci 0000:00:1f.2: PCI INT B -> GSI 19 (level, low) -> IRQ 19
+  alloc irq_desc for 30 on node -1
+  alloc kstat_irqs on node -1
+ahci 0000:00:1f.2: irq 30 for MSI/MSI-X
+ahci 0000:00:1f.2: AHCI 0001.0300 32 slots 4 ports 3 Gbps 0x1 impl SATA mode
+ahci 0000:00:1f.2: flags: 64bit ncq pm led clo pio slum part ems apst 
+ahci 0000:00:1f.2: setting latency timer to 64
+scsi0 : ahci
+scsi1 : ahci
+scsi2 : ahci
+scsi3 : ahci
+ata1: SATA max UDMA/133 abar m2048@0xf7d06000 port 0xf7d06100 irq 30
+ata2: DUMMY
+ata3: DUMMY
+ata4: DUMMY
+usb 2-1: new high speed USB device number 2 using ehci_hcd
+usb 2-1: New USB device found, idVendor=8087, idProduct=0024
+usb 2-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+usb 2-1: configuration #1 chosen from 1 choice
+hub 2-1:1.0: USB hub found
+hub 2-1:1.0: 6 ports detected
+Refined TSC clocksource calibration: 3292.520 MHz.
+Switching to clocksource tsc
+usb 1-1.1: new low speed USB device number 3 using ehci_hcd
+ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+ata1.00: ATA-8: WDC WD5000AAKX-60U6AA0, 18.01H18, max UDMA/100
+ata1.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 31/32), AA
+ata1.00: ACPI cmd ef/10:06:00:00:00:00 (SET FEATURES) succeeded
+ata1.00: ACPI cmd f5/00:00:00:00:00:00 (SECURITY FREEZE LOCK) filtered out
+ata1.00: ACPI cmd b1/c1:00:00:00:00:00 (DEVICE CONFIGURATION OVERLAY) filtered out
+ata1.00: configured for UDMA/100
+scsi 0:0:0:0: Direct-Access     ATA      WDC WD5000AAKX-6 18.0 PQ: 0 ANSI: 5
+ACPI: WMI: Mapper loaded
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input4
+generic-usb 0003:17EF:6019.0001: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+sd 0:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/465 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1 sda2 sda3
+sd 0:0:0:0: [sda] Attached SCSI disk
+usb 1-1.2: new low speed USB device number 4 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input5
+generic-usb 0003:04B3:3025.0002: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+EXT4-fs (sda2): mounted filesystem with ordered data mode. Opts: 
+dracut: Mounted root filesystem /dev/sda2
+SELinux:  Disabled at runtime.
+SELinux:  Unregistering netfilter hooks
+type=1404 audit(1462162490.971:2): selinux=0 auid=4294967295 ses=4294967295
+dracut: 
+dracut: Switching root
+udev: starting version 147
+shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+  alloc irq_desc for 22 on node -1
+  alloc kstat_irqs on node -1
+snd_hda_intel 0000:00:1b.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
+  alloc irq_desc for 31 on node -1
+  alloc kstat_irqs on node -1
+snd_hda_intel 0000:00:1b.0: irq 31 for MSI/MSI-X
+snd_hda_intel 0000:00:1b.0: setting latency timer to 64
+ACPI Warning: SystemIO range 0x0000000000000428-0x000000000000042f conflicts with OpRegion 0x0000000000000400-0x000000000000047f (\PMIO) (20090903/utaddress-254)
+ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000057f conflicts with OpRegion 0x0000000000000500-0x0000000000000563 (\GPIO) (20090903/utaddress-254)
+ACPI Warning: SystemIO range 0x0000000000000500-0x000000000000057f conflicts with OpRegion 0x0000000000000500-0x000000000000057f (\_SB_.PCI0.EHC1.GPSS) (20090903/utaddress-254)
+ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+lpc_ich: Resource conflict(s) found affecting gpio_ich
+  alloc irq_desc for 18 on node -1
+  alloc kstat_irqs on node -1
+i801_smbus 0000:00:1f.3: PCI INT C -> GSI 18 (level, low) -> IRQ 18
+ACPI Warning: SystemIO range 0x000000000000f040-0x000000000000f05f conflicts with OpRegion 0x000000000000f040-0x000000000000f04f (\_SB_.PCI0.SBUS.SMBI) (20090903/utaddress-254)
+ACPI: If an ACPI driver is available for this device, you should use it instead of the native driver
+sound hdaudioC0D0: autoconfig for ALC656: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+sound hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+sound hdaudioC0D0:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+sound hdaudioC0D0:    mono: mono_out=0x0
+sound hdaudioC0D0:    inputs:
+sound hdaudioC0D0:      Front Mic=0x19
+sound hdaudioC0D0:      Rear Mic=0x18
+sound hdaudioC0D0:      Line=0x1a
+input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input6
+input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1b.0/sound/card0/input7
+input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1b.0/sound/card0/input8
+input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1b.0/sound/card0/input9
+input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1b.0/sound/card0/input10
+r8169 Gigabit Ethernet driver 2.3LK-NAPI loaded
+r8169 0000:05:00.0: PCI INT A -> GSI 17 (level, low) -> IRQ 17
+r8169 0000:05:00.0: setting latency timer to 64
+  alloc irq_desc for 32 on node -1
+  alloc kstat_irqs on node -1
+r8169 0000:05:00.0: irq 32 for MSI/MSI-X
+r8169 0000:05:00.0: eth0: RTL8168e/8111e at 0xffffc90000676000, 74:46:a0:98:d5:b0, XID 0c200000 IRQ 32
+r8169 0000:05:00.0: eth0: jumbo features [frames: 9200 bytes, tx checksumming: ko]
+iTCO_vendor_support: vendor-support=0
+iTCO_wdt: Intel TCO WatchDog Timer Driver v1.07rh
+iTCO_wdt: Found a Cougar Point TCO device (Version=2, TCOBASE=0x0460)
+iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+microcode: CPU0 sig=0x306a9, pf=0x2, revision=0x15
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+microcode: CPU1 sig=0x306a9, pf=0x2, revision=0x15
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+microcode: CPU2 sig=0x306a9, pf=0x2, revision=0x15
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+microcode: CPU3 sig=0x306a9, pf=0x2, revision=0x15
+platform microcode: firmware: requesting intel-ucode/06-3a-09
+Microcode Update Driver: v2.00 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+microcode: CPU0 updated to revision 0x1b, date = 2014-05-29 
+microcode: CPU1 updated to revision 0x1b, date = 2014-05-29 
+microcode: CPU2 updated to revision 0x1b, date = 2014-05-29 
+microcode: CPU3 updated to revision 0x1b, date = 2014-05-29 
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: 
+Adding 8388604k swap on /dev/sda3.  Priority:-1 extents:1 across:8388604k 
+ip_tables: (C) 2000-2006 Netfilter Core Team
+nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+NET: Registered protocol family 10
+lo: Disabled Privacy Extensions
+r8169 0000:05:00.0: firmware: requesting rtl_nic/rtl8168e-2.fw
+r8169 0000:05:00.0: eth0: link down
+r8169 0000:05:00.0: eth0: link down
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+r8169 0000:05:00.0: eth0: link up
+ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+type=1305 audit(1462162508.350:3): audit_pid=1995 old=0 auid=4294967295 ses=4294967295 res=1
+eth0: no IPv6 routers present
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+tun: Universal TUN/TAP device driver, 1.6
+tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+cscotun0: Disabled Privacy Extensions
+fuse init (API version 7.14)
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+Slow work thread pool: Starting up
+Slow work thread pool: Ready
+FS-Cache: Loaded
+NFS: Registering the id_resolver key type
+FS-Cache: Netfs 'nfs' registered for caching
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=7381 DF PROTO=TCP SPT=1359 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=7385 DF PROTO=TCP SPT=1359 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=36208 DF PROTO=TCP SPT=2784 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=36212 DF PROTO=TCP SPT=2784 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=50447 DF PROTO=TCP SPT=4399 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=50456 DF PROTO=TCP SPT=4399 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+usb 1-1.2: USB disconnect, device number 4
+usb 1-1.2: new low speed USB device number 5 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input11
+generic-usb 0003:04B3:3025.0003: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=3678 DF PROTO=TCP SPT=2245 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=3683 DF PROTO=TCP SPT=2245 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=18184 DF PROTO=TCP SPT=3873 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=18188 DF PROTO=TCP SPT=3873 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=29679 DF PROTO=TCP SPT=1120 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+IPTables Packet Dropped: IN=eth0 OUT= MAC=74:46:a0:98:d5:b0:00:20:ed:61:38:90:08:00 SRC=10.20.10.111 DST=10.20.10.110 LEN=48 TOS=0x00 PREC=0x00 TTL=128 ID=29683 DF PROTO=TCP SPT=1120 DPT=445 WINDOW=65535 RES=0x00 SYN URGP=0 
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: new high speed USB device number 3 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+ip_tables: (C) 2000-2006 Netfilter Core Team
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: USB disconnect, device number 3
+usb 2-1.3: new high speed USB device number 4 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 4
+usb 2-1.3: new high speed USB device number 5 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 5
+usb 1-1.1: USB disconnect, device number 3
+usb 1-1.1: new low speed USB device number 6 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input12
+generic-usb 0003:17EF:6019.0004: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 5
+usb 1-1.2: new low speed USB device number 7 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input13
+generic-usb 0003:04B3:3025.0005: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: new high speed USB device number 6 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 1-1.1: USB disconnect, device number 6
+usb 1-1.1: new low speed USB device number 8 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input14
+generic-usb 0003:17EF:6019.0006: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 7
+usb 1-1.2: new low speed USB device number 9 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input15
+generic-usb 0003:04B3:3025.0007: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.2: new full speed USB device number 7 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.2: Product: USB  AUDIO  
+usb 2-1.2: configuration #1 chosen from 1 choice
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.2/input/input16
+generic-usb 0003:1130:1620.0008: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.2/input2
+usb 2-1.2: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.2: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+usbcore: registered new interface driver snd-usb-audio
+usb 2-1.3: USB disconnect, device number 6
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: new high speed USB device number 8 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 8
+usb 2-1.3: new high speed USB device number 9 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e65
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: USB disconnect, device number 9
+usb 1-1.1: USB disconnect, device number 8
+usb 1-1.1: new low speed USB device number 10 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input17
+generic-usb 0003:17EF:6019.0009: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 9
+usb 1-1.2: new low speed USB device number 11 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input18
+generic-usb 0003:04B3:3025.000A: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.2: USB disconnect, device number 7
+usb 2-1.2: new full speed USB device number 10 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.2: Product: USB  AUDIO  
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.2: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.2/input/input19
+generic-usb 0003:1130:1620.000B: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.2/input2
+usb 2-1.2: USB disconnect, device number 10
+cscotun0: Disabled Privacy Extensions
+usb 1-1.1: USB disconnect, device number 10
+usb 1-1.1: new low speed USB device number 12 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input20
+generic-usb 0003:17EF:6019.000C: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.1: USB disconnect, device number 12
+usb 1-1.1: new low speed USB device number 13 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=17ef, idProduct=6019
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: Lenovo USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech Lenovo USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input21
+generic-usb 0003:17EF:6019.000D: input,hidraw0: USB HID v1.11 Mouse [Logitech Lenovo USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.1: USB disconnect, device number 13
+usb 2-1.3: new low speed USB device number 11 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=046d, idProduct=c077
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB Optical Mouse
+usb 2-1.3: Manufacturer: Logitech
+usb 2-1.3: configuration #1 chosen from 1 choice
+input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.0/input/input22
+generic-usb 0003:046D:C077.000E: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1d.0-1.3/input0
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: USB disconnect, device number 11
+usb 1-1.1: new low speed USB device number 14 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=046d, idProduct=c077
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input23
+generic-usb 0003:046D:C077.000F: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 2-1.3: new full speed USB device number 12 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input24
+generic-usb 0003:1130:1620.0010: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 13 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 1-1.2: USB disconnect, device number 11
+usb 1-1.2: new low speed USB device number 15 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input25
+generic-usb 0003:04B3:3025.0011: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 12
+usb 2-1.3: new full speed USB device number 14 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input26
+generic-usb 0003:1130:1620.0012: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 1-1.2: USB disconnect, device number 15
+usb 1-1.2: new low speed USB device number 16 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input27
+generic-usb 0003:04B3:3025.0013: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 14
+usb 2-1.3: new full speed USB device number 15 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input28
+generic-usb 0003:1130:1620.0014: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 1-1.2: USB disconnect, device number 16
+usb 1-1.2: new low speed USB device number 17 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input29
+generic-usb 0003:04B3:3025.0015: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 15
+usb 2-1.3: new full speed USB device number 16 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input30
+generic-usb 0003:1130:1620.0016: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 1-1.2: USB disconnect, device number 17
+usb 1-1.2: new low speed USB device number 18 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input31
+generic-usb 0003:04B3:3025.0017: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 16
+usb 2-1.3: new full speed USB device number 17 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input32
+generic-usb 0003:1130:1620.0018: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 1-1.1: USB disconnect, device number 14
+usb 1-1.1: new low speed USB device number 19 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=046d, idProduct=c077
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input33
+generic-usb 0003:046D:C077.0019: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 18
+usb 1-1.2: new low speed USB device number 20 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input34
+generic-usb 0003:04B3:3025.001A: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 17
+usb 2-1.3: new full speed USB device number 18 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input35
+generic-usb 0003:1130:1620.001B: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.3: USB disconnect, device number 18
+usb 1-1.2: USB disconnect, device number 20
+usb 1-1.2: new low speed USB device number 21 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input36
+generic-usb 0003:04B3:3025.001C: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+cscotun0: Disabled Privacy Extensions
+usb 2-1.2: USB disconnect, device number 13
+usb 1-1.2: USB disconnect, device number 21
+usb 1-1.2: new low speed USB device number 22 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input37
+generic-usb 0003:04B3:3025.001D: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 1-1.2: USB disconnect, device number 22
+usb 1-1.2: new low speed USB device number 23 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input38
+generic-usb 0003:04B3:3025.001E: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.2: new full speed USB device number 19 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.2: Product: USB  AUDIO  
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.2: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.2/input/input39
+generic-usb 0003:1130:1620.001F: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.2/input2
+usb 2-1.3: new high speed USB device number 20 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.2: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: USB disconnect, device number 20
+usb 2-1.3: new high speed USB device number 21 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 21
+hub 2-1:1.0: unable to enumerate USB device on port 3
+hub 2-1:1.0: unable to enumerate USB device on port 3
+hub 2-1:1.0: unable to enumerate USB device on port 3
+usb 2-1.3: new high speed USB device number 25 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+putty[1731]: segfault at 31660139 ip 000000000046cb36 sp 00007fffdf4eb040 error 4 in putty[400000+c3000]
+usb 2-1.2: USB disconnect, device number 19
+usb 2-1.3: USB disconnect, device number 25
+usb 2-1.3: new high speed USB device number 26 using ehci_hcd
+hub 2-1:1.0: unable to enumerate USB device on port 3
+usb 2-1.3: new high speed USB device number 27 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 27
+usb 1-1.2: USB disconnect, device number 23
+usb 1-1.2: new low speed USB device number 24 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input40
+generic-usb 0003:04B3:3025.0020: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: new high speed USB device number 28 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.2: new full speed USB device number 29 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.2: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.2: Product: USB  AUDIO  
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.2: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.2/input/input41
+generic-usb 0003:1130:1620.0021: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.2/input2
+usb 2-1.3: USB disconnect, device number 28
+usb 2-1.3: new high speed USB device number 30 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.3: Product: Moto X
+usb 2-1.3: Manufacturer: motorola
+usb 2-1.3: SerialNumber: TA64303U8V
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 30
+usb 2-1.2: USB disconnect, device number 29
+usb 1-1.1: USB disconnect, device number 19
+usb 1-1.1: new low speed USB device number 25 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=046d, idProduct=c077
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input42
+generic-usb 0003:046D:C077.0022: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 24
+usb 1-1.2: new low speed USB device number 26 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input43
+generic-usb 0003:04B3:3025.0023: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 1-1.2: USB disconnect, device number 26
+usb 1-1.2: new low speed USB device number 27 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input44
+generic-usb 0003:04B3:3025.0024: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: new full speed USB device number 31 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input45
+generic-usb 0003:1130:1620.0025: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 32 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: USB disconnect, device number 32
+usb 1-1.2: USB disconnect, device number 27
+usb 1-1.2: new low speed USB device number 28 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input46
+generic-usb 0003:04B3:3025.0026: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: USB disconnect, device number 31
+usb 2-1.3: new full speed USB device number 33 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input47
+generic-usb 0003:1130:1620.0027: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 34 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: USB disconnect, device number 34
+usb 2-1.2: new high speed USB device number 35 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: USB disconnect, device number 35
+usb 2-1.2: new high speed USB device number 36 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: USB disconnect, device number 36
+usb 2-1.2: new high speed USB device number 37 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+cscotun0: Disabled Privacy Extensions
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.2: USB disconnect, device number 37
+usb 2-1.3: USB disconnect, device number 33
+cscotun0: Disabled Privacy Extensions
+usb 1-1.2: USB disconnect, device number 28
+usb 1-1.2: new low speed USB device number 29 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input48
+generic-usb 0003:04B3:3025.0028: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 1-1.2: USB disconnect, device number 29
+usb 1-1.2: new low speed USB device number 30 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input49
+generic-usb 0003:04B3:3025.0029: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 2-1.3: new full speed USB device number 38 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input50
+generic-usb 0003:1130:1620.002A: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.3: USB disconnect, device number 38
+usb 2-1.3: new full speed USB device number 39 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input51
+generic-usb 0003:1130:1620.002B: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 40 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.2: USB disconnect, device number 40
+usb 2-1.3: USB disconnect, device number 39
+usb 1-1.1: USB disconnect, device number 25
+usb 1-1.1: new low speed USB device number 31 using ehci_hcd
+usb 1-1.1: New USB device found, idVendor=046d, idProduct=c077
+usb 1-1.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.1: Product: USB Optical Mouse
+usb 1-1.1: Manufacturer: Logitech
+usb 1-1.1: configuration #1 chosen from 1 choice
+input: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input52
+generic-usb 0003:046D:C077.002C: input,hidraw0: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:1a.0-1.1/input0
+usb 1-1.2: USB disconnect, device number 30
+usb 1-1.2: new low speed USB device number 32 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input53
+generic-usb 0003:04B3:3025.002D: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: new full speed USB device number 41 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input54
+generic-usb 0003:1130:1620.002E: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 42 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 41
+usb 2-1.3: new full speed USB device number 43 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input55
+generic-usb 0003:1130:1620.002F: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+UDP: short packet: From 0.0.0.0:68 316/308 to 255.255.255.255:67
+usb 2-1.3: USB disconnect, device number 43
+cscotun0: Disabled Privacy Extensions
+usb 2-1.2: USB disconnect, device number 42
+cscotun0: Disabled Privacy Extensions
+cscotun0: no IPv6 routers present
+usb 1-1.2: USB disconnect, device number 32
+usb 1-1.2: new low speed USB device number 33 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input56
+generic-usb 0003:04B3:3025.0030: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: new full speed USB device number 44 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input57
+generic-usb 0003:1130:1620.0031: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.3: USB disconnect, device number 44
+usb 2-1.3: new full speed USB device number 45 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input58
+generic-usb 0003:1130:1620.0032: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.2: new high speed USB device number 46 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 2-1.3: USB disconnect, device number 45
+usb 2-1.2: USB disconnect, device number 46
+usb 2-1.2: new high speed USB device number 47 using ehci_hcd
+usb 2-1.2: New USB device found, idVendor=22b8, idProduct=2e63
+usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+usb 2-1.2: Product: Moto X
+usb 2-1.2: Manufacturer: motorola
+usb 2-1.2: SerialNumber: TA64303U8V
+usb 2-1.2: configuration #1 chosen from 1 choice
+usb 1-1.2: USB disconnect, device number 33
+usb 1-1.2: new low speed USB device number 34 using ehci_hcd
+usb 1-1.2: New USB device found, idVendor=04b3, idProduct=3025
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB NetVista Full Width Keyboard
+usb 1-1.2: Manufacturer: CHICONY
+usb 1-1.2: configuration #1 chosen from 1 choice
+input: CHICONY USB NetVista Full Width Keyboard as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.2/1-1.2:1.0/input/input59
+generic-usb 0003:04B3:3025.0033: input,hidraw1: USB HID v1.10 Keyboard [CHICONY USB NetVista Full Width Keyboard] on usb-0000:00:1a.0-1.2/input0
+usb 2-1.3: new full speed USB device number 48 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input60
+generic-usb 0003:1130:1620.0034: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: 1:1: usb_set_interface failed (-32)
+usb 2-1.3: USB disconnect, device number 48
+usb 2-1.3: new full speed USB device number 49 using ehci_hcd
+usb 2-1.3: New USB device found, idVendor=1130, idProduct=1620
+usb 2-1.3: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.3: Product: USB  AUDIO  
+usb 2-1.3: configuration #1 chosen from 1 choice
+usb 2-1.3: Warning! Unlikely big volume range (=17152), cval->res is probably wrong.
+usb 2-1.3: [2] FU [PCM Playback Volume] ch = 2, val = 0/17152/1
+input: USB  AUDIO   as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.3/2-1.3:1.2/input/input61
+generic-usb 0003:1130:1620.0035: input,hidraw2: USB HID v1.10 Device [USB  AUDIO  ] on usb-0000:00:1d.0-1.3/input2

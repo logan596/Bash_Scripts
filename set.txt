@@ -1,0 +1,215 @@
+BASH=/bin/bash
+BASHOPTS=cdspell:checkwinsize:cmdhist:expand_aliases:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="1" [2]="2" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.1.2(1)-release'
+COLORS=/etc/DIR_COLORS
+COLORTERM=gnome-terminal
+COLUMNS=157
+CVS_RSH=ssh
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-cSOFQWEDG4,guid=a9b3522efe5de0bb07f5e5a800000045
+DESKTOP_SESSION=gnome
+DIRSTACK=()
+DISPLAY=:0.0
+EUID=501
+GDMSESSION=gnome
+GDM_KEYBOARD_LAYOUT=us
+GDM_LANG=en_US.UTF-8
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GNOME_KEYRING_PID=2997
+GNOME_KEYRING_SOCKET=/tmp/keyring-iPS30l/socket
+GROUPS=()
+GTK_RC_FILES=/etc/gtk/gtkrc:/home/ygavhane/.gtkrc-1.2-gnome2
+G_BROKEN_FILENAMES=1
+HISTCONTROL=ignoredups
+HISTFILE=/home/ygavhane/.bash_history
+HISTFILESIZE=1000
+HISTSIZE=1000
+HOME=/home/ygavhane
+HOSTNAME=Ygavhane
+HOSTTYPE=x86_64
+ID=501
+IFS=$' \t\n'
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+IMSETTINGS_MODULE=none
+LANG=en_US.UTF-8
+LESSOPEN='||/usr/bin/lesspipe.sh %s'
+LINES=52
+LOADEDMODULES=
+LOGNAME=ygavhane
+LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:'
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/spool/mail/ygavhane
+MAILCHECK=60
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+MODULESHOME=/usr/share/Modules
+OPTERR=1
+OPTIND=1
+ORBIT_SOCKETDIR=/tmp/orbit-ygavhane
+OSTYPE=linux-gnu
+PATH=/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/ygavhane/bin
+PIPESTATUS=([0]="0")
+PPID=27555
+PROMPT_COMMAND='printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/~}"'
+PS1='\e[0;41m[\u@\h \W]$ \e[m '
+PS2='> '
+PS4='+ '
+PWD=/home/ygavhane/Documents/scripts
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_IM_MODULE=xim
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3007,unix/unix:/tmp/.ICE-unix/3007
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=2
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_AUTH_SOCK=/tmp/keyring-iPS30l/socket.ssh
+TERM=xterm
+UID=501
+USER=ygavhane
+USERNAME=ygavhane
+WINDOWID=88080388
+WINDOWPATH=1
+XAUTHORITY=/var/run/gdm/auth-for-ygavhane-1iWlXq/database
+XDG_SESSION_COOKIE=5a70fd5b1669612cc599c2950000000b-1462162557.563455-95393395
+XMODIFIERS=@im=none
+_=set
+colors=/etc/DIR_COLORS
+shell=bash
+__udisks () 
+{ 
+    local IFS='
+';
+    local cur="${COMP_WORDS[COMP_CWORD]}";
+    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--show-info" ]; then
+        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+    else
+        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--inhibit-polling" ]; then
+            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+        else
+            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--mount" ]; then
+                COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+            else
+                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--unmount" ]; then
+                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                else
+                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--detach" ]; then
+                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                    else
+                        if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-refresh" ]; then
+                            COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                        else
+                            if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--ata-smart-simulate" ]; then
+                                _filedir || return 0;
+                            else
+                                if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--set-spindown" ]; then
+                                    COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                else
+                                    if [ "${COMP_WORDS[$(($COMP_CWORD - 1))]}" = "--poll-for-media" ]; then
+                                        COMPREPLY=($(compgen -W "$(udisks --enumerate-device-files)" -- $cur));
+                                    else
+                                        COMPREPLY=($(IFS=: compgen -W "--dump:--inhibit-polling:--inhibit-all-polling:--enumerate:--enumerate-device-files:--monitor:--monitor-detail:--show-info:--help:--mount:--mount-fstype:--mount-options:--unmount:--unmount-options:--detach:--detach-options:--ata-smart-refresh:--ata-smart-wakeup:--ata-smart-simulate:--set-spindown:--set-spindown-all:--spindown-timeout:--poll-for-media" -- $cur));
+                                    fi;
+                                fi;
+                            fi;
+                        fi;
+                    fi;
+                fi;
+            fi;
+        fi;
+    fi
+}
+_module () 
+{ 
+    local cur="$2" prev="$3" cmds opts;
+    COMPREPLY=();
+    cmds="add apropos avail clear display help	      initadd initclear initlist initprepend initrm initswitch	      keyword list load purge refresh rm show swap switch	      unload unuse update use whatis";
+    opts="-c -f -h -i -l -s -t -u -v -H -V	      --create --force  --help  --human   --icase	      --long   --silent --terse --userlvl --verbose --version";
+    case "$prev" in 
+        add | load)
+            COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"))
+        ;;
+        rm | remove | unload | switch | swap)
+            COMPREPLY=($(IFS=: compgen -W "${LOADEDMODULES}" -- "$cur"))
+        ;;
+        unuse)
+            COMPREPLY=($(IFS=: compgen -W "${MODULEPATH}" -- "$cur"))
+        ;;
+        use | *-a*)
+
+        ;;
+        -u | --userlvl)
+            COMPREPLY=($(compgen -W "novice expert advanced" -- "$cur"))
+        ;;
+        display | help | show | whatis)
+            COMPREPLY=($(compgen -W "$(_module_avail)" -- "$cur"))
+        ;;
+        *)
+            if test $COMP_CWORD -gt 2; then
+                _module_long_arg_list "$cur";
+            else
+                case "$cur" in 
+                    ls)
+                        COMPREPLY="list"
+                    ;;
+                    r*)
+                        COMPREPLY="rm"
+                    ;;
+                    sw*)
+                        COMPREPLY="switch"
+                    ;;
+                    -*)
+                        COMPREPLY=($(compgen -W "$opts" -- "$cur"))
+                    ;;
+                    *)
+                        COMPREPLY=($(compgen -W "$cmds" -- "$cur"))
+                    ;;
+                esac;
+            fi
+        ;;
+    esac
+}
+_module_avail () 
+{ 
+    /usr/bin/modulecmd bash -t avail 2>&1 | sed '
+		/:$/d;
+		/:ERROR:/d;
+		s#^\(.*\)/\(.\+\)(default)#\1\n\1\/\2#;
+		s#/(default)##g;
+		s#/*$##g;'
+}
+_module_long_arg_list () 
+{ 
+    local cur="$1" i;
+    if [[ ${COMP_WORDS[COMP_CWORD-2]} == sw* ]]; then
+        COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"));
+        return;
+    fi;
+    for ((i = COMP_CWORD - 1; i > 0; i--))
+    do
+        case ${COMP_WORDS[$i]} in 
+            add | load)
+                COMPREPLY=($(compgen -W "$(_module_not_yet_loaded)" -- "$cur"));
+                break
+            ;;
+            rm | remove | unload | switch | swap)
+                COMPREPLY=($(IFS=: compgen -W "${LOADEDMODULES}" -- "$cur"));
+                break
+            ;;
+        esac;
+    done
+}
+_module_not_yet_loaded () 
+{ 
+    comm -23 <(_module_avail|sort) <(tr : '\n' <<<${LOADEDMODULES}|sort)
+}
+module () 
+{ 
+    eval `/usr/bin/modulecmd bash $*`
+}
