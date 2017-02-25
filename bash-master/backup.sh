@@ -1,4 +1,4 @@
 #!/bin/bash
 
-OF=/var/my-backup-$(date +%Y%m%d).tgz
-tar -cZf $OF /home/john/
+OF=/home/jenkins-$(date +%Y%m%d).tgz
+tar -cZf $OF /home/jenkins/
