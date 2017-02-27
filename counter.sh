@@ -1,6 +1,6 @@
 #!/bin/bash
 counter=0
-max_count=10
+max_count=5
 while true; do
 counter=$((counter+1))
  if [ "$counter" -gt "$max_count" ]; then
